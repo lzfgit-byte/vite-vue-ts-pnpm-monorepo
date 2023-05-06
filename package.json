@@ -7,7 +7,9 @@
     "build": "vite build"
   },
   "dependencies": {
-    "vue": "^3.2.45"
+    "vue": "^3.2.45",
+    "@ilzf/utils": "workspace:*",
+    "@ilzf/components": "workspace:*"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^0.36.0",

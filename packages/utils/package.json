@@ -1,6 +1,7 @@
 {
   "name": "@ilzf/utils",
   "libName": "utils",
+  "packageManager": "pnpm@8.1.1",
   "version": "0.0.18",
   "files": [
     "dist"
