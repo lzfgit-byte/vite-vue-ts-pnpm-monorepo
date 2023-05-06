@@ -1,4 +1,8 @@
-import HelloWord_ from './src/HelloWord.vue';
+import type { SFCWithInstall } from '@ilzf/utils';
+import { withInstall } from '@ilzf/utils';
 
-export const HelloWord = HelloWord_;
+import HelloWord_ from './src/HelloWord.vue';
+withInstall(HelloWord_);
+
+export const HelloWord = HelloWord_ as SFCWithInstall<typeof HelloWord_>;
 export default HelloWord_;
