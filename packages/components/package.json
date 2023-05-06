@@ -1,0 +1,33 @@
+{
+  "name": "@ilzf/components",
+  "version": "0.0.18",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite --host",
+    "beforeBuild": "node script/beforeBuild.js",
+    "afterBuild": "node script/afterBuild.js",
+    "build:comp": "vite build",
+    "build:lib:comp": "pnpm run beforeBuild && vite build && pnpm pack && pnpm run afterBuild",
+    "build:lib:static:comp": "vite build && pnpm pack && pnpm run afterBuild",
+    "lib:comp": "pnpm pack && pnpm run afterBuild"
+  },
+  "peerDependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "@popperjs/core": "^2.11.7",
+    "@vue/runtime-core": "^3.2.45",
+    "@vueuse/core": "^9.13.0",
+    "axios": "^1.3.3",
+    "element-plus": "^2.3.3",
+    "lodash": "^4.17.21",
+    "@types/lodash": "^4.14.194",
+    "vue": "^3.2.45",
+    "xlsx": "^0.18.5",
+    "xlsx-js-style": "^1.2.0",
+    "@vue/reactivity": "^3.2.45",
+    "idb": "^7.1.1"
+  }
+}
