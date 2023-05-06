@@ -1,0 +1,21 @@
+{
+  "name": "@ilzf/docs",
+  "libName": "docs",
+  "packageManager": "pnpm@8.1.1",
+  "version": "0.0.18",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/docs-index.js",
+  "scripts": {
+    "dev:docs": "vite --host"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.21",
+    "@types/lodash": "^4.14.194",
+    "vue": "^3.2.45",
+    "@ilzf/utils": "workspace:*",
+    "@ilzf/components": "workspace:*"
+  }
+}
