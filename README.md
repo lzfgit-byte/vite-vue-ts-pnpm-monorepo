@@ -1,3 +1,3 @@
-# 前端monorepo
+### 前端monorepo
 
-# 构建版本去packages里进行操作
+### 子包在packages,每个包进行单独构建,可以添加自己的包

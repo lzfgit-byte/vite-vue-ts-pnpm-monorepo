@@ -9,13 +9,13 @@
   "type": "module",
   "main": "dist/utils-index.js",
   "scripts": {
-    "dev:utils": "vite --host",
+    "utils:dev": "vite --host",
     "beforeBuild": "node script/beforeBuild.js",
     "afterBuild": "node script/afterBuild.js",
-    "build:utils": "vite build",
-    "uLib:utils": "pnpm run beforeBuild && vite build && pnpm pack && pnpm run afterBuild",
-    "sLib:utils": "vite build && pnpm pack && pnpm run afterBuild",
-    "pack:utils": "pnpm pack && pnpm run afterBuild"
+    "utils:build": "vite build",
+    "utils:uLib": "pnpm run beforeBuild && vite build && pnpm pack && pnpm run afterBuild",
+    "utils:sLib": "vite build && pnpm pack && pnpm run afterBuild",
+    "utils:pack": "pnpm pack && pnpm run afterBuild"
   },
   "peerDependencies": {
     "lodash": "^4.17.21",

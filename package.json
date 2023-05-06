@@ -1,11 +1,12 @@
 {
-  "name": "power-frontend",
+  "name": "ilzf",
   "version": "0.0.1",
   "packageManager": "pnpm@8.1.1",
   "scripts": {
     "dev": "vite --host",
     "build": "vite build"
   },
+  "keywords": ["vue3.x","pnpm","vite","typeScript","ts","monorepo","lib"],
   "dependencies": {
     "vue": "^3.2.45",
     "@ilzf/utils": "workspace:*",

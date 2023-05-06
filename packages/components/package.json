@@ -9,13 +9,13 @@
   "type": "module",
   "main": "dist/components-index.js",
   "scripts": {
-    "dev:comp": "vite --host",
+    "comp:dev": "vite --host",
     "beforeBuild": "node script/beforeBuild.js",
     "afterBuild": "node script/afterBuild.js",
-    "build:comp": "vite build",
-    "uLib:comp": "pnpm run beforeBuild && vite build && pnpm pack && pnpm run afterBuild",
-    "sLib:comp": "vite build && pnpm pack && pnpm run afterBuild",
-    "pack:comp": "pnpm pack && pnpm run afterBuild"
+    "comp:build": "vite build",
+    "comp:uLib": "pnpm run beforeBuild && vite build && pnpm pack && pnpm run afterBuild",
+    "comp:sLib": "vite build && pnpm pack && pnpm run afterBuild",
+    "comp:pack": "pnpm pack && pnpm run afterBuild"
   },
   "peerDependencies": {
     "element-plus": "^2.3.3",
@@ -24,6 +24,6 @@
     "lodash": "^4.17.21",
     "@types/lodash": "^4.14.194",
     "vue": "^3.2.45",
-    "@ilzf/utils": "workspace:*"
+    "@ilzf/utils": "workspace:^"
   }
 }
