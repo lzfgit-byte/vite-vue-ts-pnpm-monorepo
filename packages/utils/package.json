@@ -6,7 +6,7 @@
     "dist"
   ],
   "type": "module",
-  "main": "dist/index.js",
+  "main": "dist/utils-index.js",
   "scripts": {
     "dev": "vite --host",
     "beforeBuild": "node script/beforeBuild.js",
