@@ -1,0 +1,24 @@
+{
+  "name": "@ilzf/utils",
+  "libName": "utils",
+  "version": "0.0.18",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "vite --host",
+    "beforeBuild": "node script/beforeBuild.js",
+    "afterBuild": "node script/afterBuild.js",
+    "build:utils": "vite build",
+    "build:lib:utils": "pnpm run beforeBuild && vite build && pnpm pack && pnpm run afterBuild",
+    "build:lib:static:utils": "vite build && pnpm pack && pnpm run afterBuild",
+    "lib:utils": "pnpm pack && pnpm run afterBuild"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.21",
+    "@types/lodash": "^4.14.194",
+    "vue": "^3.2.45"
+  }
+}

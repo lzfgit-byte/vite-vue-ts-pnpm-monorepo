@@ -1,5 +1,6 @@
 {
   "name": "@ilzf/components",
+  "libName": "components",
   "version": "0.0.18",
   "files": [
     "dist"
