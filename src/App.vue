@@ -1,7 +1,7 @@
 <template>
-  <PHelloWord></PHelloWord>
+  <HelloWord></HelloWord>
 </template>
 
 <script setup lang="ts">
-  import { PHelloWord } from '@pfrontend/components';
+  import { HelloWord } from '@ilzf/components';
 </script>
