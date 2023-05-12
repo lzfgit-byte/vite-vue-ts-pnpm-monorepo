@@ -1,21 +1,32 @@
 {
   "name": "@ilzf/docs",
-  "libName": "docs",
-  "packageManager": "pnpm@8.1.1",
-  "version": "0.0.18",
-  "files": [
-    "dist"
-  ],
+  "version": "1.0.0",
   "type": "module",
-  "main": "dist/docs-index.js",
+  "main": "index.js",
+  "packageManager": "pnpm@8.1.1",
+  "license": "MIT",
   "scripts": {
-    "dev:docs": "vite --host"
+    "docs:dev": " vitepress dev docs",
+    "docs:build": "cross-env BASE=/vitepress-demo/ vitepress build docs",
+    "docs:serve": "vitepress serve docs"
   },
   "peerDependencies": {
-    "lodash": "^4.17.21",
-    "@types/lodash": "^4.14.194",
-    "vue": "^3.2.45",
-    "@ilzf/utils": "workspace:*",
-    "@ilzf/components": "workspace:*"
+    "@ilzf/components": "workspace:^"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "less": "^4.1.2",
+    "vitepress": "^1.0.0-alpha.75",
+    "vitepress-theme-demoblock": "^2.0.1"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "@algolia/client-search"
+      ]
+    }
   }
 }

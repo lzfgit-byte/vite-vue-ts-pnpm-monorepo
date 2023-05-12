@@ -53,6 +53,10 @@ export const getCompName = (component) => {
 };
 export const withInstall = (component) => {
   component.install = (app: App): void => {
+    if (app.component(getCompName(component))) {
+      // 已经注册，不在重复注册
+      return;
+    }
     app.component(getCompName(component), component);
   };
 };
