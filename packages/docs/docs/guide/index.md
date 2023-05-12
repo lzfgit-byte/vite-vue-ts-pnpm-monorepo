@@ -9,7 +9,7 @@
 :::demo 使用 `type`、`plain`、`round` 和 `circle` 属性来定义 Button 的样式。
 ```vue
 <template>
-<PowerBtn :need-permission="false" type="success">测试</PowerBtn>
+<HelloWord></HelloWord>
 </template>
 <script setup lang="ts"></script>
 
