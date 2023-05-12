@@ -9,7 +9,7 @@ export default defineConfig({
   description: '使用 Vitepress 搭建组件库文档站点。',
 
   lastUpdated: true,
-  cleanUrls: 'without-subfolders',
+  cleanUrls: true,
 
   base: process.env.BASE || '/',
   head: [['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }]],
@@ -20,10 +20,14 @@ export default defineConfig({
     },
 
     // options for markdown-it-anchor
-    anchor: { permalink: false },
+    anchor: {
+      permalink: (slug: string, opts, state, index: number) => {
+        console.log('---->');
+      },
+    },
 
     // options for markdown-it-toc
-    toc: { includeLevel: [1, 2] },
+    toc: { level: [1, 2] },
 
     // light: #f9fafb, dark: --vp-code-block-bg
     theme: { light: 'github-light', dark: 'github-dark' },
